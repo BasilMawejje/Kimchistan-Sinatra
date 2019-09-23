@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      database: products_development
+      hosts:
+        - localhost:27017
