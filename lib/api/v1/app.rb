@@ -22,7 +22,7 @@ class Product
 
   index({ name: 'text' })
 
-  scope :name, -> (name) { where(name: /^#{name}/) }
+  # scope :name, -> (name) { where(name: /^#{name}/) }
 end
 
 # Serializers
