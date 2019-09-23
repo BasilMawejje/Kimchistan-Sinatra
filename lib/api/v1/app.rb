@@ -82,14 +82,8 @@ namespace '/api/v1' do
     ProductSerializer.new(product).to_json
   end
 
-  post '/products ' do
-    product = Product.new(json_params)
-    if product.save
-      response.headers['Location'] = "#{base_url}/api/v1/products/#{product.id}"
-      status 201
-    else
-      status 422
-      body ProductSerializer.new(product).to_json
-    end
+  delete '/products/:id' do |id|
+    product.destroy if product
+    status 204
   end
 end
