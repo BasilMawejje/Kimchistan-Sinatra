@@ -1,6 +1,6 @@
 development:
   clients:
     default:
-      database: products_development
+      database: kimchistan-sinatra_development
       hosts:
         - localhost:27017

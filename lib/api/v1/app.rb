@@ -21,8 +21,6 @@ class Product
   validates :price, presence: true
 
   index({ name: 'text' })
-
-  scope :name, -> (name) { where(name: /^#{name}/) }
 end
 
 # Serializers
