@@ -1,4 +1,3 @@
-# Serializers
 class ProductSerializer
   def initialize(product)
     @product = product
