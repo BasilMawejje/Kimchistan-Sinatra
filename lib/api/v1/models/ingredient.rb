@@ -10,4 +10,6 @@ class Ingredient
   validates :available, presence: true
 
   index({ name: 'text' })
+
+  embedded_in :product
 end

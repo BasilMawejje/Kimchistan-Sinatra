@@ -13,4 +13,6 @@ RSpec.describe Ingredient, type: :model do
 
   it { is_expected.to have_field(:name).of_type(String) }
   it { is_expected.to have_field(:available).of_type(Mongoid::Boolean) }
+
+  it { is_expected.to be_embedded_in(:product) }
 end

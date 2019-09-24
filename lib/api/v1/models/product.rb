@@ -13,4 +13,6 @@ class Product
   index({ name: 'text' })
 
   # scope :name, -> (name) { where(name: /^#{name}/) }
+
+  embeds_many :ingredients
 end

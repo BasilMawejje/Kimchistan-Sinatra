@@ -15,6 +15,7 @@ RSpec.describe Product, type: :model do
   it { is_expected.to have_field(:name).of_type(String) }
   it { is_expected.to have_field(:description).of_type(String) }
   it { is_expected.to have_field(:price).of_type(Float) }
+  it { is_expected.to embed_many(:ingredients) }
 
   describe 'Scopes' do
     before do
