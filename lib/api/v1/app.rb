@@ -4,6 +4,7 @@ require 'mongoid'
 require './lib/api/v1/controllers/products_controller.rb'
 require './lib/api/v1/models/product.rb'
 require './lib/api/v1/serializers/product_serializer.rb'
+require './lib/api/v1/helpers/product_helper.rb'
 
 # DB Setup
 configure do
