@@ -7,5 +7,6 @@ gem 'factory_bot_rails'
 
 group :test do
   gem 'mongoid-rspec'
+  gem 'database_cleaner'
   gem 'pry-byebug'
 end

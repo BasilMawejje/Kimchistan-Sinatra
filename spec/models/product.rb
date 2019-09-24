@@ -1,6 +1,7 @@
 require './lib/api/v1/app'
 require 'factory_bot_rails'
 require './spec/factories/product'
+require './spec/support/database_cleaner'
 
 RSpec.describe Product, type: :model do
   it { is_expected.to be_mongoid_document }
