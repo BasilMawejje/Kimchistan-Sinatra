@@ -13,3 +13,6 @@ require './lib/api/v1/serializers/ingredient_serializer.rb'
 configure do
   Mongoid.load!("./mongoid.yml")
 end
+
+class KimchistanSinatra < Sinatra::Application
+end
