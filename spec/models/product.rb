@@ -27,30 +27,5 @@ RSpec.describe Product, type: :model do
     it "should have 5 products" do
       expect(Product.count).to be(5)
     end
-
-  #   it "does not return unavailable dishes" do
-  #     expect(Product.dishes).to_not include(Product.where("available = false"))
-  #   end
-  #
-  #   it "should have a salads named scope that returns salads" do
-  #     expect(Product.salads.count).to be(5)
-  #   end
-  #
-  #   it "does not return unavailable salads" do
-  #     expect(Product.salads).to_not include(Product.where("available = false"))
-  #   end
-  #
-  #   it "should have a drinks named scope that returns drinks" do
-  #     expect(Product.drinks.count).to be(5)
-  #   end
-  #
-  #   it "does not return unavailable drinks" do
-  #     expect(Product.drinks).to_not include(Product.where("available = false"))
-  #   end
-  # end
-  #
-  # describe 'associations' do
-  #   it {is_expected.to have_and_belong_to_many(:ingredients)}
-  # end
   end
 end
