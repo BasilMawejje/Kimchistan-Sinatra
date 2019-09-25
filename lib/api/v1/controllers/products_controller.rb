@@ -25,7 +25,7 @@ namespace '/api/v1' do
   post '/products' do
     product = Product.new(json_params)
     if product.save
-      ProductSerializer.new(product).to_json
+      body ProductSerializer.new(product).to_json
       status 201
     else
       status 422
