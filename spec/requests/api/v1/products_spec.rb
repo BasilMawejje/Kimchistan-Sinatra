@@ -5,9 +5,8 @@ require 'factory_bot_rails'
 require './spec/factories/product'
 require './spec/support/database_cleaner'
 
-RSpec.describe 'hello app' do
+RSpec.describe 'KimchsitanSinatra' do
   include Rack::Test::Methods
-  let(:headers) { { HTTP_ACCEPT: 'application/json' } }
 
   def app
     Sinatra::Application
