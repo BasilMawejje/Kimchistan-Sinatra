@@ -32,6 +32,16 @@ RSpec.describe 'KimchsitanSinatra' do
         expect(last_response.status).to eq 400
         expect(last_response.body).to eq "{\"message\":\"Invalid JSON\"}"
       end
+
+      it 'should post a valid product' do
+        product = { name: "chicken", description: "desc", price: 10.0 }
+        post '/api/v1/products',
+        product.to_json,
+        "CONTENT_TYPE" => "application/json"
+
+        expect(last_response.status).to eq 201
+        expect(last_response.body).to eq ""
+      end
     end
   end
 end
