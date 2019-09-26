@@ -1,2 +1,2 @@
 require "./lib/api/v1/app.rb"
-run KimchistanSinatra
+run Sinatra::Application
