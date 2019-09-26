@@ -34,13 +34,13 @@ RSpec.describe 'KimchsitanSinatra' do
       end
 
       it 'should post a valid product' do
-        product = { name: "chicken", description: "desc", price: 10.0 }
+        product = { id: "5d8c744bf522cc0b35e9bf5a", name: "chicken", description: "desc", price: 10.0 }
         post '/api/v1/products',
         product.to_json,
         "CONTENT_TYPE" => "application/json"
 
         expect(last_response.status).to eq 201
-        expect(last_response.body).to eq ""
+        expect(last_response.body).to eq "{\"id\":\"5d8c744bf522cc0b35e9bf5a\",\"name\":\"chicken\",\"description\":\"desc\",\"price\":10.0}"
       end
     end
   end
