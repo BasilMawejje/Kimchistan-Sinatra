@@ -63,6 +63,7 @@ GEM
       rspec (~> 3.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
+    nio4r (2.5.2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     pony (1.13.1)
@@ -73,6 +74,8 @@ GEM
     pry-byebug (3.7.0)
       byebug (~> 11.0)
       pry (~> 0.10)
+    puma (4.2.0)
+      nio4r (~> 2.0)
     rack (2.0.7)
     rack-protection (2.0.7)
       rack
@@ -132,6 +135,7 @@ DEPENDENCIES
   mongoid-rspec
   pony
   pry-byebug
+  puma
   sinatra
   sinatra-contrib
 

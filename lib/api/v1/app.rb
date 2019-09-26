@@ -8,6 +8,7 @@ require './lib/api/v1/models/product.rb'
 require './lib/api/v1/models/ingredient.rb'
 require './lib/api/v1/serializers/product_serializer.rb'
 require './lib/api/v1/serializers/ingredient_serializer.rb'
+require 'sinatra/reloader' if development?
 
 # DB Setup
 configure do

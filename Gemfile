@@ -4,6 +4,7 @@ gem 'sinatra'
 gem 'mongoid'
 gem 'sinatra-contrib'
 gem 'pony'
+gem 'puma'
 
 group :test do
   gem 'mongoid-rspec'
