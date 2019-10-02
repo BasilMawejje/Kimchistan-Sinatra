@@ -6,8 +6,6 @@ require './workers/mail_worker.rb'
 RSpec.describe MailWorker do
   let(:sqs_msg) { double message_id: 'fc754df7-9cc2-4c41-96ca-5996a44b771e' }
 
-  let(:body) { 'test' }
-
   describe '#perform' do
     subject { MailWorker.new }
 
