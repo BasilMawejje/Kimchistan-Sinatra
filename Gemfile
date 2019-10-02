@@ -7,6 +7,7 @@ gem 'puma'
 gem 'pony'
 gem 'shoryuken'
 gem 'aws-sdk-sqs'
+gem 'swagger-blocks'
 
 group :test do
   gem 'mongoid-rspec'
