@@ -5,8 +5,6 @@ require 'sinatra/reloader' if development?
 Dir["./lib/api/v1/**/*.rb"].each { |file|
   require file
 }
-
-require 'shoryuken'
 require './workers/mail_worker.rb'
 require 'dotenv/load'
 

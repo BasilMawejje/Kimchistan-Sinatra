@@ -1,3 +1,5 @@
+require 'shoryuken'
+
 class MailWorker
   include Shoryuken::Worker
   shoryuken_options queue: 'order_details', auto_delete: true
