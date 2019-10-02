@@ -1,0 +1,11 @@
+require 'dotenv/load'
+
+aws:
+  access_key_id: ENV['AWS_KEY']
+  region: ENV['AWS_REGION']
+  secret_access_key: ENV['AWS_SECRET_KEY']
+  concurrency: 25
+  delay: 25
+  timeout: 10
+  queues:
+    - [order_details, 6]
