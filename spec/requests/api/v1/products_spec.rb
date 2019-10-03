@@ -44,4 +44,13 @@ RSpec.describe 'KimchsitanSinatra' do
       end
     end
   end
+
+  describe 'DELETE /v1/products/:id' do
+    it "should delete a product" do
+      product = { id: "5d8c744bf522cc0b35e9bf5a", name: "chicken", description: "desc", price: 10.0 }
+      delete "/api/v1/products/#{product[:id]}"
+
+      expect(last_response.status).to eq 204
+    end
+  end
 end

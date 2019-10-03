@@ -34,6 +34,7 @@ namespace '/api/v1' do
   end
 
   delete '/products/:id' do |id|
+    product = Product.where(id: id).first
     product.destroy if product
     status 204
   end
